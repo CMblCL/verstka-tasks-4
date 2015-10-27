@@ -1,0 +1,103 @@
+.no-indent
+{
+    margin: 0;
+    padding: 0;
+}
+
+.newspaper
+{
+    width: 1072px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.table-center
+{
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+}
+
+.three-colomn-header tr > td:first-child,
+.three-colomn-header tr > td:last-child
+{
+    width: 0;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.three-colomn-header tr > td:first-child
+{
+    text-align: left;
+}
+.three-colomn-header tr > td:last-child
+{
+    text-align: right;
+}
+
+.three-colomn-header
+{
+    border-collapse: collapse;
+    margin: auto;
+    padding: 0;
+}
+
+.dotted
+{
+    border: 2px dotted #000;
+}
+
+.solid-top
+{
+    border-top: 2px solid #000;
+}
+
+.solid-bottom
+{
+    border-bottom: 2px solid #000;
+}
+
+.newspaper-body
+{
+    -webkit-column-count: 4;
+    -webkit-column-rule: 1px solid #000;
+}
+
+.line
+{
+    border-top: 1px solid #000;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    text-align: center;
+    width: 3em;
+
+}
+
+.article p
+{
+    text-indent: 1em;
+    margin: 0;
+    padding: 3px 2px;
+}
+
+.letter-spacing
+{
+    letter-spacing: .5em;
+}
+
+.big-letters
+{
+    text-transform: uppercase;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.center
+{
+    text-align: center;
+}
