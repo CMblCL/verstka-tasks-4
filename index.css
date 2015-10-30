@@ -9,7 +9,7 @@
 
 .newspaper-caption
 {
-    font-family: 'old_londonregular', Times New Roman, serif;
+    font-family: 'old_londonregular', 'Times New Roman', serif;
     font-size: 48px;
 }
 
@@ -80,17 +80,18 @@
 {
     -webkit-column-count: 5;
     -webkit-column-rule: 1px solid #000;
+    -moz-column-count: 5;
+    -moz-column-rule: 1px solid #000;
+    column-count: 5;
+    column-rule: 1px solid #000;
 }
 
 .line
 {
+    border: 0;
     border-top: 1px solid #000;
-    border-left: none;
-    border-bottom: none;
-    border-right: none;
     text-align: center;
     width: 3em;
-
 }
 
 .article p
@@ -100,9 +101,9 @@
     padding: 3px 2px;
 }
 
-.no-text-indent
+p.no-text-indent
 {
-    text-indent: 0 !important;
+    text-indent: 0;
 }
 
 .letter-spacing
@@ -133,9 +134,11 @@
 .column-span
 {
     -webkit-column-span: 2;
+    -moz-column-span: 2;
+    column-span: 2;
 }
 
-.border
+.solid-border
 {
     border: 2px solid #000;
 }
