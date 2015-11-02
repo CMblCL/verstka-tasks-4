@@ -24,9 +24,14 @@
     width: 100%;
     margin: 10px auto 20px;
     padding: 0;
-    font-family: Times New Roman, serif;
+}
+
+.newspaper-body,
+.newspaper-header
+{
+    font-family: 'Times New Roman', serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .table-center
@@ -155,4 +160,49 @@ p.no-text-indent
     font-size: 3em;
     padding: 0 4px;
     margin: 0 2px 0 0;
+}
+
+#black:checked ~ .newspaper-header *,
+#black:checked ~ .newspaper-body *,
+#black:checked ~ .newspaper-header,
+#black:checked ~ .newspaper-body
+{
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+    -moz-column-rule: 1px solid #fff;
+    -webkit-column-rule: 1px solid #fff;
+    column-rule: 1px solid #fff;
+}
+
+#arial:checked ~ .newspaper-header *,
+#arial:checked ~ .newspaper-body *,
+#arial:checked ~ .newspaper-header,
+#arial:checked ~ .newspaper-body
+{
+    font-family: Arial;
+}
+
+#old-london:checked  ~ .newspaper-header *,
+#old-london:checked  ~ .newspaper-body *,
+#old-london:checked  ~ .newspaper-header,
+#old-london:checked  ~ .newspaper-body
+{
+    font-family: 'old_londonregular', serif;
+}
+
+#small:checked ~ .newspaper-header *,
+#small:checked ~ .newspaper-body *,
+#small:checked ~ .newspaper-header,
+#small:checked ~ .newspaper-body
+{
+    font-size: .9em;
+}
+
+#big:checked  ~ .newspaper-header *,
+#big:checked  ~ .newspaper-body *,
+#big:checked  ~ .newspaper-header,
+#big:checked  ~ .newspaper-body
+{
+    font-size: 1.1em;
 }
