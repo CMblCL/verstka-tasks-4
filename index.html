@@ -6,7 +6,26 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body class="newspaper">
-        <header>
+        <label for="black">Белые буквы на черном фоне:</label>
+        <input type="checkbox" id="black"><br>
+
+        Тип шрифта:
+        <label for="default">по уполчанию</label>
+        <input type="radio" name="face" id="default" checked>
+        <label for="arial">Arial</label>
+        <input type="radio" name="face" id="arial">
+        <label for="old-london">Old London</label>
+        <input type="radio" name="face" id="old-london"><br>
+
+        Размер шрифта:
+        <label for="default">по уполчанию</label>
+        <input type="radio" name="size" id="default" checked>
+        <label for="big">большой</label>
+        <input type="radio" name="size" id="big">
+        <label for="small">маленький</label>
+        <input type="radio" name="size" id="small"><br>
+
+        <header class="newspaper-header">
             <table class="three-colomn-header">
                 <tr>
                     <td>
@@ -122,7 +141,7 @@
                 </p>
             </article>
             <section>
-                    <h4 class="article first-cap column-span solid-border h">
+                    <h4 class="article first-cap border h">
                     Victor Recital today<br>
                     Cecilian Retical tomorrow<br>
                     soprano: mrs. Hary Dow Dirk
